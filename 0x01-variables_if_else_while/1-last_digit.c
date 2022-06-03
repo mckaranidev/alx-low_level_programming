@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry point
+ * main - Program assigns a random number to the variable n each time
  *
- * Return: Always 0 (Success)
+ * Return: Always return 0
  */
 int main(void)
 {
