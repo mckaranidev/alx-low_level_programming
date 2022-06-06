@@ -9,7 +9,7 @@ int main(void)
 int singleDigits1;
 
 for (singleDigits1 = 0; singleDigits1 < 10; singleDigits1++)
-putchar((singleDigits1 % 10) + 0);
+putchar((singleDigits1 % 10) + '0');
 
 putchar('\n');
 
