@@ -8,14 +8,13 @@ int main(void)
 {
 char lowercaseExcept;
 
-for (lowercaseExcept = a; lowercaseExcept <= z; lowercaseExcept++)
+for (lowercaseExcept = 'a'; lowercaseExcept <= 'z'; lowercaseExcept++)
 {
-if (lowercaseExcept != e && lowercaseExcept != q)
+if (lowercaseExcept != 'e' && lowercaseExcept != 'q')
 putchar(lowercaseExcept);
 }
 
-putchar(n);
+putchar('\n');
 
 return (0);
 }
-
