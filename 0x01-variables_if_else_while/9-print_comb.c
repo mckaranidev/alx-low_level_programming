@@ -14,10 +14,10 @@ for (combo = 48; combo < 58; combo++)
 putchar(combo);
 if (combo != 57)
 {
-putchar(,);
-putchar( );
+putchar(',');
+putchar(' ');
 }
 }
-putchar(n);
+putchar('\n');
 return (0);
 }
