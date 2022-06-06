@@ -10,7 +10,7 @@ int comboThree2;
 int comboThree3;
 
 for (comboThree1 = 0; comboThree1 <= 7; comboThree1++)
-{comboThree1
+{
 for (comboThree2 = comboThree1 + 1; comboThree2 <= 9; comboThree2++)
 {
 for (comboThree3 = comboThree2 + 1; comboThree3 <= 9; comboThree3++)
