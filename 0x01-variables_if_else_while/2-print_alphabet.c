@@ -7,10 +7,10 @@
 
 int main(void)
 {
-char letter;
-for (letter = a; letter <= z; letter++)
-putchar(letter);
-putchar(n);
+char lowercase;
+for (lowercase = a; lowercase <= z; lowercase++)
+putchar(lowercase);
+putchar(\n);
 
 return (0);
 }
