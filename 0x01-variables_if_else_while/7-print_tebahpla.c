@@ -8,7 +8,7 @@ int main(void)
 {
 int lowercaseReverse;
 
-for (lowercaseReverse = 122; lowercaseReverse > 96; lowercaseReverse--)
+for (lowercaseReverse = z; lowercaseReverse >= a; lowercaseReverse--)
 {
 putchar(lowercaseReverse);
 }
