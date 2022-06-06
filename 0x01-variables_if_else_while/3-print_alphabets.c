@@ -8,13 +8,13 @@ int main(void)
 {
 char alphABET;
 
-for (alphABET = a; alphABET <= z; alphABET++)
+for (alphABET = 'a'; alphABET <= 'z'; alphABET++)
 putchar(alphABET);
 
-for (alphABET = A; alphABET <= Z; alphABET++)
+for (alphABET = 'A'; alphABET <= 'Z'; alphABET++)
 putchar(alphABET);
 
-putchar(\n);
+putchar('\n');
 
 return (0);
 }
