@@ -12,6 +12,6 @@ for (singleDigits = 0; singleDigits < 10; singleDigits++)
 {
 printf("%d", singleDigits);
 }
-putchar(n);
+putchar('\n');
 return (0);
 }
