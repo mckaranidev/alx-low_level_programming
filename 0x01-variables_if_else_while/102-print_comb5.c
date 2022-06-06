@@ -31,6 +31,6 @@ comboC22 += 1;
 }
 comboB22 += 1;
 }
-putchar(n);
+putchar('\n');
 return (0);
 }
