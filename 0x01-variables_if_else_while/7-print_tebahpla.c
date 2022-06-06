@@ -12,6 +12,6 @@ for (lowercaseReverse = 'z'; lowercaseReverse >= 'a'; lowercaseReverse--)
 {
 putchar(lowercaseReverse);
 }
-putchar('/n');
+putchar('\n');
 return (0);
 }
