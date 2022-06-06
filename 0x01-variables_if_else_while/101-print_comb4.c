@@ -20,11 +20,11 @@ putchar(comboThree2);
 putchar(comboThree3);
 if (comboThree1 == 7 && comboThree2 == 8 && comboThree3 == 9)
 break;
-putchar(,);
-putchar( );
+putchar(',');
+putchar(' ');
 }
 }
 }
-putchar(n);
+putchar('\n');
 return (0);
 }
