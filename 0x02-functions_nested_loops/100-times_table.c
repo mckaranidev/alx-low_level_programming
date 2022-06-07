@@ -1,5 +1,5 @@
 
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_times_table - Prints n times table starting with 0.
