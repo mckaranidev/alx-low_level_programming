@@ -14,5 +14,5 @@ z %= 10;
 if (z < '0')
 z *= -1;
 
-_putchar(z + 0);
+_putchar(z + '0');
 return (z);}
