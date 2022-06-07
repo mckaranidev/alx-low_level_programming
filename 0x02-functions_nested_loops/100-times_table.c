@@ -20,14 +20,14 @@ _putchar('0');
 for (multiply = 1; multiply <= n; multiply++)
 {
 _putchar(',');
-_putchar( );
+_putchar(' ');
 
 product = number * multiply;
 
 if (product <= 99)
-_putchar( );
+_putchar(' ');
 if (product <= 9)
-_putchar( );
+_putchar(' ');
 
 if (product >= 100)
 {
