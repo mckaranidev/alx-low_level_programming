@@ -7,9 +7,9 @@
 
 void print_alphabet(void)
 {
-int alphabet1 = a;
+int alphabet1 = 'a';
 
-while (alphabet1 <= z)
+while (alphabet1 <= 'z')
 {
 _putchar(alphabet1);
 alphabet1 += 1;
