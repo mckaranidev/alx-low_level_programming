@@ -4,17 +4,17 @@
 
 /**
 
- * main - Program that prints _putchar, followed by a new line.
+* main - Program that prints _putchar, followed by a new line.
 
- * Return: Always return 0
+* Return: Always return 0
 
- */
+*/
 
  
 
- int main(void)
+int main(void)
 
- {
+{
 
 putchar(_);
 
