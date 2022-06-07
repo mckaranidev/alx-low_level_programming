@@ -5,17 +5,14 @@
 * Return: To return 0
 */
 
-void print_alphabet_x10(void)
+void print_alphabet(void)
 {
-char y;
-int z;
-z = 0;
+int alphabet1 = a;
 
-while (z < 10)
+while (alphabet1 <= z)
 {
-for (y = 'a'; y <= 'z'; y++)
-_putchar(y);
-_putchar('\n');
-y++;
+_putchar(alphabet1);
+alphabet1 += 1;
 }
+_putchar(10);
 }
