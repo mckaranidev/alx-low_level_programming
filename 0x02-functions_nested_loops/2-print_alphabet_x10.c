@@ -12,8 +12,8 @@ char alphabetLowercase;
 
 while (alphabet_x10++ <= 9)
 {
-for (alphabetLowercase = a; alphabetLowercase <= z; alphabetLowercase++)
+for (alphabetLowercase = 'a'; alphabetLowercase <= 'z'; alphabetLowercase++)
 _putchar(alphabetLowercase);
-_putchar(n);
+_putchar('\n');
 }
 }
