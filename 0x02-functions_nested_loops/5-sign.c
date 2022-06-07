@@ -17,7 +17,7 @@ numberSign = 1;
 else if (n < 0)
 {
 _putchar('-');
-i = -1;
+numberSign = -1;
 }
 else
 {
