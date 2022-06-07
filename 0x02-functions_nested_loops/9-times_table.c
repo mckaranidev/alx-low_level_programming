@@ -30,6 +30,6 @@ _putchar((table9C / 10) + 48);
 _putchar((table9C % 10) + 48);
 }
 }
-_putchar(n);
+_putchar('\n');
 }
 }
