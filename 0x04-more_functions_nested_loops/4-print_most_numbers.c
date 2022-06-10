@@ -4,7 +4,7 @@
 
 /**
 
-* print_most_numbers - a function that prints the numbers, from 0 to 9.
+* print_most_numbers - Function that prints the numbers from 0 to 9.
 
 * Return:  0
 
