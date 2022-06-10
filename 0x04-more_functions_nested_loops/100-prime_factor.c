@@ -2,7 +2,7 @@
 
 /**
 * main - finds and prints the largest prime factor
-* Return: 0 
+* Return: 0
 */
 
 int main(void)
@@ -34,4 +34,5 @@ break;
 }
 }
 
-return (0);}
+return (0);
+}
