@@ -25,4 +25,4 @@ c = (count - 1) / 2;
 for (c++; c < count; c++)
 _putchar(str[c]);
 _putchar('\n');
-} 
+}
