@@ -43,7 +43,7 @@ neg *= -1;
 else if (s[n] <= '9' && s[n] >= '0')
 {
 
-a += (s[n] - '0') * multiply * neg;
+a += (s[n] - '0') * multiply *neg;
 multiply /= 10;
 }
 
