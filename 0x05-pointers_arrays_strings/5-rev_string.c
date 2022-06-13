@@ -2,10 +2,10 @@
 
 /**
 * rev_string - Function that reverses a string.
-* @s: The string to be reversed.
+* @str: The string to be reversed.
 */
 
-void rev_string(char *s)
+void rev_string(char *str)
 {
 int len = 0, n = 0;
 char tmp;
