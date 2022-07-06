@@ -3,10 +3,10 @@
 
 /**
  * array_iterator - given as a parameter on each element of an array.
- * @array: intpu array
+ * @array: The array
  * @size: size of the array
- * @action: is a pointer to the function
- * Return: nothing
+ * @action: Pointer to the function
+ * Return: 0
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
