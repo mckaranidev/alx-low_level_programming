@@ -1,6 +1,4 @@
 #include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -12,43 +10,38 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-list_t *newNode;
+	char *dup;
+	int len;
+	list_t *new, *last;
 
-newNode = (list_t *)malloc(sizeof(list_t));
-if (newNode == NULL)
-return (NULL);
-newNode->str = strdup(str);
-newNode->len = string_length(str);
-newNode->next = NULL;
+	new = malloc(sizeof(list_t));
+	if (new == NULL)
+		return (NULL);
 
-if (*head == NULL)
-*head = newNode;
+	dup = strdup(str);
+	if (str == NULL)
+	{
+		free(new);
+		return (NULL);
+	}
 
-else
-{
-list_t *lastNode = *head;
+	for (len = 0; str[len];)
+		len++;
 
-while (lastNode->next != NULL)
-{
-lastNode = lastNode->next;
-}
-lastNode->next = newNode;
-}
-return (newNode);
-}
+	new->str = dup;
+	new->len = len;
+	new->next = NULL;
 
-/**
-* string_length - finds the length of a string.
-* Return: length of c.
-* @pointer: pointer.
-*/
-int string_length(const char *pointer)
-{
-int c = 0;
+	if (*head == NULL)
+		*head = new;
 
-while (*(pointer + c) != '\0')
-{
-c++;
-}
-return (c);
+	else
+	{
+		last = *head;
+		while (last->next != NULL)
+			last = last->next;
+		last->next = new;
+	}
+
+	return (*head);
 }
