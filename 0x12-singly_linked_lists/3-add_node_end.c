@@ -4,20 +4,6 @@
 #include <string.h>
 
 /**
-* _strlen - size of string
-* @str: string to obtain it's size
-* Return: _strlen
-*/
-int _strlen(const char *str)
-{
-int i;
-
-for (i = 0; str[i]; i++);
-
-return (i);
-}
-
-/**
 * add_node_end - adds a new node at the end of list_t list
 * @head: struct list_t, node
 * @str: Duplicate
