@@ -4,17 +4,18 @@
 /**
 * free_list - Frees a list_t list.
 * @head: A pointer to the list_t list.
+* Return: nothing
 */
 
 void free_list(list_t *head)
 {
-list_t *hold;
+list_t *temp;
 
 while (head != NULL)
 {
-hold = head;
-head = head->next;
-free(hold->str);
-free(hold);
+temp = head->next;
+free(head->str);
+free(head);
+head = temp;
 }
 }
