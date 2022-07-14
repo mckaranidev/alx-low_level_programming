@@ -11,31 +11,29 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-list_t *newNode;
+char *dup;
+int len;
+list_t *new;
 
-newNode = (list_t *)malloc(sizeof(list_t));
-if (newNode == NULL)
-return (NULL);
-newNode->str = strdup(str);
-newNode->len = string_length(str);
-newNode->next = *head;
-*head = newNode;
+new = malloc(sizeof(list_t));
+if (new == NULL)
+	return (NULL);
 
-return (*head);
+dup = strdup(str);
+if (dup == NULL)
+{
+	free(new);
+	return (NULL);
 }
 
-/**
-* string_length - finds the length of a string.
-* Return: length of c.
-* @pointer: pointer.
-*/
-int string_length(const char *pointer)
-{
-int c = 0;
+for (len = 0; str[len];)
+	len++;
 
-while (*(pointer + c) != '\0')
-{
-c++;
-}
-return (c);
+new->str = dup;
+new->len = len;
+new->next = *head;
+
+*head = new;
+
+return (new);
 }
