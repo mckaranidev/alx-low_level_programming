@@ -6,36 +6,28 @@
  * @str: hold character.
  * Return: string.
  */
-char *cap_string(char *str)
-{
-	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+char *cap_string(char *a)
+{
+	int i, x;
+	char *seperators = ",;.!?\"(){} \n\t";
+
+	for (i = 0; *(a + i) != '\0'; i++)
 	{
-		if (i == 0)
-		{
-			if ((str[i] >= 97 && str[i] <= 122))
+		if (*(a + i) >= 'a' && *(a + i) <= 'z')
+			for (x = 0; *(seperators + x) != '\0'; x++)
 			{
-				str[i] = str[i] - 32;
-				continue;
+				if (*(a + i - 1) == *(seperators + x))
+				{
+					*(a + i) -= 32;
+					break;
+				}
+				else if (i == 0)
+				{
+					*(a + i) -= 32;
+					break;
+				}
 			}
-		}
-		else if (str[i] == ' ')
-		{
-			++i;
-			if (str[i] >= 97 && str[i] <= 122)
-			{
-				str[i] = str[i] - 32;
-				continue;
-			}
-		}
-		else
-		{
-			if (str[i] >= 65 && str[i] <= 90)
-			{
-				str[i] = str[i] + 32;
-			}
-		}
 	}
-	return (str);
+	return (a);
 }
